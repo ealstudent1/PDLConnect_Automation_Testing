@@ -18,7 +18,7 @@ public class HomePage extends CommonMethods{
 
 	WebDriver driver = Driver.getDriver();
 	
-	
+	//lunching driver for testing Purpose
 
 	public HomePage() {
 		PageFactory.initElements(Driver.getDriver(), this);
@@ -57,7 +57,7 @@ public class HomePage extends CommonMethods{
 		String expectedTitle=ConfigurationReader.getProperty("HomePageTitle");
 		String ExpectedURL = ConfigurationReader.getProperty("expectedURL");
 
-		logger.info("Expected Title from properties file is =" + ExpectedURL);
+		logger.info("URL doesn't Containt: " + ExpectedURL);
         
 		try {
 			
